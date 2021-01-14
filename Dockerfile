@@ -2,6 +2,8 @@ FROM centos:7
 LABEL maintainer="Geoffrey WAROQUIER"
 ENV container docker
 
+RUN localectl set-locale LANG=fr_FR.utf8
+
 # Install systemd -- See https://hub.docker.com/_/centos/
 RUN (cd /lib/systemd/system/sysinit.target.wants/; for i in *; do [ $i == \
 systemd-tmpfiles-setup.service ] || rm -f $i; done); \
