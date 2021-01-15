@@ -9,3 +9,5 @@ CentOS 7 Docker container localized in french
 
 [![Build Status][build_badge]][build_link]
 [![Docker Automated build][docker_badge]][docker_link]
+
+...
