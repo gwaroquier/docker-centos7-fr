@@ -4,11 +4,11 @@ on:
 
   push:
     branches: [ main ]
-    paths: [ README.md, .github/readme.yml ]
+    paths: [ README.md, .github/workflows/readme.yml ]
 
   pull_request:
     branches: [ main ]
-    paths: [ README.md, .github/readme.yml ]
+    paths: [ README.md, .github/workflows/readme.yml ]
 
 jobs:
 

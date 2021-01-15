@@ -4,11 +4,11 @@ on:
 
   push:
     branches: [ main ]
-    paths: [ Dockerfile, .github/build.yml ]
+    paths: [ Dockerfile, .github/workflows/build.yml ]
 
   pull_request:
     branches: [ main ]
-    paths: [ Dockerfile, .github/build.yml ]
+    paths: [ Dockerfile, .github/workflows/build.yml ]
 
 jobs:
 
