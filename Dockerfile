@@ -2,6 +2,8 @@ FROM centos:7
 LABEL maintainer="Geoffrey WAROQUIER"
 ENV container docker
 
+ERROR !!!!!!!!!!!
+
 RUN localedef -i fr_FR -c -f UTF-8 fr_FR.UTF-8;
 
 ENV LANG fr_FR.UTF-8
