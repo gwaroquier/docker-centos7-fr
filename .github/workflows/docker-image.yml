@@ -33,3 +33,10 @@ jobs:
       with:
         push: true
         tags: gwaroquier/docker-centos7-fr:latest
+
+    - name: Update repo description
+      uses: peter-evans/dockerhub-description@v2
+      with:
+        username: ${{ secrets.DOCKERHUB_USERNAME }}
+        password: ${{ secrets.DOCKERHUB_PASSWORD }}
+        repository: gwaroquier/docker-centos7-fr
