@@ -4,17 +4,15 @@ on:
 
   push:
     branches: [ main ]
-    paths:
-      - README.md
+    paths: [ README.md, .github/readme.yml ]
 
   pull_request:
     branches: [ main ]
-    paths:
-      - README.md
+    paths: [ README.md, .github/readme.yml ]
 
 jobs:
 
-  build:
+  push:
 
     runs-on: ubuntu-latest
 

@@ -4,17 +4,15 @@ on:
 
   push:
     branches: [ main ]
-    paths:
-      - Dockerfile
+    paths: [ Dockerfile, .github/build.yml ]
 
   pull_request:
     branches: [ main ]
-    paths:
-      - Dockerfile
+    paths: [ Dockerfile, .github/build.yml ]
 
 jobs:
 
-  build:
+  push:
 
     runs-on: ubuntu-latest
 
